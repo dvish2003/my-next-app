@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 export default function page() {
   return (
      <main>
+
        <h1>Home Page</h1>
          <ul>
              <li><Link href={"/"} className={styles.link}>Home</Link></li>   {/*page routing*/}
