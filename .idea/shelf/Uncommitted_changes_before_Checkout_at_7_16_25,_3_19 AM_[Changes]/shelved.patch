@@ -1,0 +1,38 @@
+Index: src/app/page.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\nimport Link from \"next/link\";\nimport styles from \"./page.module.css\";\n\n\nexport default function page() {\n  return (\n     <main>\n       <h1>Home Page</h1>\n         <ul>\n             <li><Link href={\"/\"} className={styles.link}>Home</Link></li>   {/*page routing*/}\n             <li><Link href={\"/services\"} className={styles.link}>Services</Link></li>\n             <li><Link href={\"/products\"} className={styles.link}>Products</Link></li>\n             <li><Link href={\"/about\"} className={styles.link}>About</Link></li>\n             <li><Link href={\"/contact\"} className={styles.link}>Contact us</Link></li>\n             <li><Link href={\"/about/branches\"} className={styles.link}>Branches</Link></li>\n             <li><Link href={\"/products/vegies\"} className={styles.link}>Vegitables</Link></li>\n         </ul>\n\n         <Link href={\"/https://nextjs.org/\"} id={styles.specialLink} target={'_blank'}>Next Js Site</Link> .\n     </main>\n  )\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/app/page.tsx b/src/app/page.tsx
+--- a/src/app/page.tsx	(revision 8ebbbf88c2861c13f5a5b65188f7c8d199b3fe82)
++++ b/src/app/page.tsx	(date 1752616138196)
+@@ -1,23 +1,15 @@
+ import React from "react";
++import Image from "next/image";
+ import Link from "next/link";
+ import styles from "./page.module.css";
++import img1 from "../../public/next.svg";
+ 
+ 
+ export default function page() {
+   return (
+      <main>
+        <h1>Home Page</h1>
+-         <ul>
+-             <li><Link href={"/"} className={styles.link}>Home</Link></li>   {/*page routing*/}
+-             <li><Link href={"/services"} className={styles.link}>Services</Link></li>
+-             <li><Link href={"/products"} className={styles.link}>Products</Link></li>
+-             <li><Link href={"/about"} className={styles.link}>About</Link></li>
+-             <li><Link href={"/contact"} className={styles.link}>Contact us</Link></li>
+-             <li><Link href={"/about/branches"} className={styles.link}>Branches</Link></li>
+-             <li><Link href={"/products/vegies"} className={styles.link}>Vegitables</Link></li>
+-         </ul>
+-
+-         <Link href={"/https://nextjs.org/"} id={styles.specialLink} target={'_blank'}>Next Js Site</Link> .
++     <Image src={} alt={"Sample Image_1"}/>
+      </main>
+   )
+ }
+\ No newline at end of file
